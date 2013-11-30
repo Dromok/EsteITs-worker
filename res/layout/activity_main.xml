@@ -1,0 +1,78 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tabhost"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+		<TabWidget android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"/>
+			
+		<FrameLayout 
+		    android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingTop="65px">
+			
+			<LinearLayout
+			    android:id="@+id/current1"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+
+				<TextView
+				    android:id="@+id/statusText"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:layout_marginTop="10dp"
+				    android:text="В офисе"
+				    android:textColor="#00C43A"
+				    android:textSize="24sp"
+				    android:textStyle="bold" />
+
+				<Chronometer
+				    android:id="@+id/chronometer1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_gravity="center"
+				    android:text="Chronometer" />
+
+				<Button
+				    android:id="@+id/refreshButton"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:text="Обновить" />
+			
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/journal2"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/settings3"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+				
+			    <EditText 
+			        android:id="@+id/username"
+			        android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:hint="Введите ваш логин"/>
+			    <Button
+				    android:id="@+id/saveButton"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_marginTop="10dp"
+				    android:text="Сохранить настройки" />
+				
+			</LinearLayout>
+
+		</FrameLayout>
+</TabHost>
