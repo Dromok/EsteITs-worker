@@ -36,7 +36,7 @@ class DBHelper extends SQLiteOpenHelper {
       // создаем таблицу с полями
       db.execSQL("create table mytable ("
           + "id integer primary key autoincrement," 
-          + "name text,"
+          + "date text,"
           + "email text" + ");");
     }
 
